@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ShopAoThung.Models.Mmenu>
+@{
+    var menuitem = ViewBag.menuitem;
+}
+<ul>
+    <li class="menu__item dropdown">
+        <a class="menu__link" href="~/san-pham/@menuitem.link" data-toggle="dropdown">@menuitem.name<b class="caret"></b></a>
+        <ul class="dropdown-menu agile_short_dropdown">
+            @foreach (var item in Model)
+            {
+                <li class="menu__item dropdown">
+                    <a href="~/san-pham/@item.link">@item.name</a>
+                </li>
+            }
+        </ul>
+
+    </li>   
+</ul>
+
+

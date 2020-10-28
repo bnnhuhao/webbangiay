@@ -632,6 +632,11 @@
     <Content Include="Views\Cart\_item_cart.cshtml" />
     <Content Include="Views\Cart\Index.cshtml" />
     <Content Include="Views\Checkout\Index.cshtml" />
+    <Content Include="Views\Product\_aonu.cshtml" />
+    <Content Include="Views\Product\_phukien.cshtml" />
+    <Content Include="Views\Modules\_SubMainMenu1.cshtml" />
+    <Content Include="Views\Modules\_SubMainMenu2.cshtml" />
+    <Content Include="Views\Product\_banchay.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

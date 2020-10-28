@@ -22,12 +22,18 @@ namespace ShopAoThung.Controllers
         }
         public ActionResult _aoThungNu()
         {
-            return View();
+            var list = db.Products.Where(m => m.status == 1 && m.catid == 4).Take(4).ToList();
+            return View("_aonu",list);
         }
         public ActionResult _phuKien()
         {
-            return View();
+            var list = db.Products.Where(m => m.status == 1 && m.catid ==16).Take(4).ToList();
+            return View("_phukien", list);
         }
-
+        public ActionResult _SanphamBanchay()
+        {
+            var list = db.Products.Where(m => m.status == 1).OrderByDescending(m=>m.sold).Take(4).ToList();
+            return View("_banchay", list);
+        }
     }
 }
