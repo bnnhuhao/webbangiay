@@ -39,7 +39,8 @@ namespace ShopAoThung.Controllers
         }
         public ActionResult _slider()
         {
-            return View("_slider");
+            var list = db.Sliders.Where(m => m.status == 1 && m.position == "SliderShow").OrderByDescending(m => m.orders).ToList();
+            return View("_slider",list  );
         }
         public ActionResult _footer()
         {

@@ -523,6 +523,7 @@
     <Compile Include="Controllers\CheckoutController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ModulesController.cs" />
+    <Compile Include="Controllers\ProductCategoryController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\TrackOrderController.cs" />
     <Compile Include="Global.asax.cs">
@@ -637,6 +638,8 @@
     <Content Include="Views\Modules\_SubMainMenu1.cshtml" />
     <Content Include="Views\Modules\_SubMainMenu2.cshtml" />
     <Content Include="Views\Product\_banchay.cshtml" />
+    <Content Include="Views\ProductCategory\Category.cshtml" />
+    <Content Include="Views\ProductCategory\Subcategory.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

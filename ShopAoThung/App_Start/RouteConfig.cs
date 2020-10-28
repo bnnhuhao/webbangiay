@@ -19,10 +19,16 @@ namespace ShopAoThung
         defaults: new { controller = "Checkout", action = "Index", id = UrlParameter.Optional }
         );
             routes.MapRoute(
+ name: "SanphamCat",
+ url: "san-pham/{slug}",
+ defaults: new { controller = "Productcategory", action = "Category", id = UrlParameter.Optional }
+);
+            routes.MapRoute(
         name: "giohang",
         url: "giohang",
         defaults: new { controller = "Cart", action = "Index", id = UrlParameter.Optional }
         );
+
             routes.MapRoute(
         name: "Default",
         url: "{controller}/{action}/{id}",
